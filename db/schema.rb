@@ -10,9 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_26_183325) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_26_185634) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "reservations", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "room_id"
+    t.string "start_date"
+    t.string "end_date"
+    t.decimal "price"
+    t.decimal "total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "room_images", force: :cascade do |t|
     t.integer "room_id"
@@ -45,4 +56,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_183325) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
 end
