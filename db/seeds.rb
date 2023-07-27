@@ -4,6 +4,7 @@
 
 # User.create(name: "Horace", email: "horace@yahoo.com", image: "https://acidcow.com/pics/20090812/pics/8/ugly_people_24.jpg")
 
+<<<<<<< HEAD
 # Room.create(
 #   user_id: 1,
 #   address: "5000 Json Ave",
@@ -17,28 +18,31 @@
 #   total_bathrooms: 10,
 # )
 
-Room.create(
-  user_id: 2,
-  address: "9000 Sauron St",
-  city: "New York City",
-  state: "NY",
-  price: 5000.0,
-  description: "The best place ever!",
-  home_type: "Tower",
-  total_occupancy: 20,
-  total_bedrooms: 20,
-  total_bathrooms: 20,
-)
+# Room.create(
+#   user_id: 2,
+#   address: "9000 Sauron St",
+#   city: "New York City",
+#   state: "NY",
+#   price: 5000.0,
+#   description: "The best place ever!",
+#   home_type: "Tower",
+#   total_occupancy: 20,
+#   total_bedrooms: 20,
+#   total_bathrooms: 20,
+# )
 
-Room.create(
-  user_id: 3,
-  address: "123 Forest Rd",
-  city: "Gump",
-  state: "AL",
-  price: 500.0,
-  description: "Visit the house of Forest!",
-  home_type: "House",
-  total_occupancy: 7,
-  total_bedrooms: 7,
-  total_bathrooms: 6,
-)
+# Room.create(
+#   user_id: 3,
+#   address: "123 Forest Rd",
+#   city: "Gump",
+#   state: "AL",
+#   price: 500.0,
+#   description: "Visit the house of Forest!",
+#   home_type: "House",
+#   total_occupancy: 7,
+#   total_bedrooms: 7,
+#   total_bathrooms: 6,
+# )
+=======
+# Reservation.create(user_id: 3, room_id: 103, start_date: "07-26-2023", end_date: "08-02-2023", price: 125.00, total: 875.00)
+>>>>>>> 3c8346c825ffd4eccc2bd3bca055dcdb83e560fd
