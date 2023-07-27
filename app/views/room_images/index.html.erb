@@ -1,0 +1,5 @@
+<h1>Room photos</h1>
+<% @room_images.each do |room_image| %>
+<%= image_tag(room_image.url, {:style => "width:500px;"}) %>
+<br>
+<% end %>
