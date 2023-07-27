@@ -21,8 +21,8 @@ class ReservationsController < ApplicationController
     render :index
   end
 
-  def show
-    @reservation = Reservation.find_by(id: params(:id))
-    render :show
-  end
+  # def show
+  #   @reservation = Reservation.find_by(id: params(:id))
+  #   render :show
+  # end
 end
