@@ -1,0 +1,14 @@
+<h1>All Rooms</h1>
+<hr>
+<% @rooms.each do |room| %>
+  <h2>Price: <%= room.price %></h2>
+  <h2>Address: <%= room.address %></h2>
+  <h2>City: <%= room.city %></h2>
+  <h2>Description <%= room.description %></h2>
+  <h2>Home Type: <%= room.home_type %></h2>
+  <h2>Total Occupany: <%= room.total_occupancy %></h2>
+  <h2>Total Bedrooms: <%= room.total_bedrooms %></h2>
+  <h2>Total Bathrooms: <%= room.total_bathrooms %></h2>
+  <br>
+  <hr>
+<% end %>
