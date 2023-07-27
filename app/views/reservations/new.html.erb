@@ -1,0 +1,30 @@
+<h1>New Reservation</h1>
+<%= form_with model: @reservation do |form| %>
+  <div>
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+  <div>
+    <%= form.label :room_id %>
+    <%= form.text_field :room_id %>
+  </div>
+  <div>
+    <%= form.label :start_date %>
+    <%= form.text_field :start_date %>
+  </div>
+  <div>
+    <%= form.label :end_date %>
+    <%= form.text_field :end_date %>
+  </div>
+  <div>
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+  <div>
+    <%= form.label :total %>
+    <%= form.text_field :total %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end%>
