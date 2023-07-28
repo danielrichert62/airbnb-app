@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  root "home#index"
+  #  root "home#index"
   get "/users/:id" => "users#show"
   get "/room_images" => "room_images#index"
-
+  get "/" => "homes#index"
   get "/signup" => "users#new"
   post "/users" => "users#create"
   get "/login" => "sessions#new"
