@@ -15,7 +15,7 @@ class ReservationsController < ApplicationController
     )
     if @reservation.save
       render json: { message: "Reservation saved successfully" }
-    else #sad path
+    else
       render json: { errors: @reservation.errors.full_messages }, status: :unprocessable_entity
     end
   end
