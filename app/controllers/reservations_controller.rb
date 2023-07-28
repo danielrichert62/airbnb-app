@@ -5,7 +5,7 @@ class ReservationsController < ApplicationController
   end
 
   def create
-    @reservation = Reservation.create(
+    @reservation = Reservation.new(
       user_id: params[:user_id],
       room_id: params[:room_id],
       start_date: params[:start_date],
@@ -13,7 +13,11 @@ class ReservationsController < ApplicationController
       price: params[:price],
       total: params[:total],
     )
-    redirect_to "/reservations"
+    if @reservation.save
+      render json: { message: "Reservation saved successfully" }
+    else #sad path
+      render json: { errors: @reservation.errors.full_messages }, status: :unprocessable_entity
+    end
   end
 
   def index
@@ -21,8 +25,8 @@ class ReservationsController < ApplicationController
     render :index
   end
 
-  # def show
-  #   @reservation = Reservation.find_by(id: params(:id))
-  #   render :show
-  # end
+  def show
+    @reservation = Reservation.find_by(id: params(:id))
+    render :show
+  end
 end
