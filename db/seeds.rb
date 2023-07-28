@@ -57,3 +57,4 @@
 #   total_bedrooms: 7,
 #   total_bathrooms: 6,
 # )
+# Reservation.create(user_id: 3, room_id: 103, start_date: "07-26-2023", end_date: "08-02-2023", price: 125.00, total: 875.00)

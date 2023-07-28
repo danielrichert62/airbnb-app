@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  #  root "home#index"
   get "/users/:id" => "users#show"
   get "/room_images" => "room_images#index"
   get "/" => "homes#index"
@@ -9,4 +8,6 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
   delete "/logout" => "sessions#destroy"
   get "/rooms" => "rooms#index"
+
+  resources :reservations
 end

@@ -1,9 +1,11 @@
-<h1>All Reservations</h1>
-<% @reservations.each do |reservation| %>
-  <h2>Guest: <%= reservation.user %></h2>
-  <h2>Room: <%= reservation.room %></h2>
+<h1>Welcome!</h1>
+<a href="/reservations/new">Create Reservation</a>
+<a href="/reservations/1">Reservation Info</a>
+<!--<% @reservations.each do |reservation| %>
+  <h2>Guest: <%= reservation.user.name %></h2>
+  <h2>Home: <%= reservation.room.address %></h2>
   <h2>Start Date: <%= reservation.start_date %></h2>
   <h2>End Date: <%= reservation.end_date %></h2>
   <h2>Price/Night: <%= reservation.price %></h2>
   <h2>Total: <%= reservation.total %></h2>
-<% end %>
+<% end %> -->
